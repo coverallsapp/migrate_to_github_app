@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "codeship_migrate_to_github_app/version"
+require "coveralls_migrate_to_github_app/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "codeship_migrate_to_github_app"
-  spec.version       = CodeshipMigrateToGithubApp::VERSION
-  spec.authors       = ["Codeship Engineering"]
-  spec.email         = ["codeship-engineering@cloudbees.com"]
+  spec.name          = "coveralls_migrate_to_github_app"
+  spec.version       = CoverallsMigrateToGithubApp::VERSION
+  spec.authors       = ["Coveralls"]
+  spec.email         = ["support@coveralls.io"]
 
-  spec.summary       = "Migrate your Codeship Projects from legacy Github services to Codeship's Github App"
-  spec.description   = "Migrate your Codeship Projects from legacy Github services to Codeship's Github App"
-  spec.homepage      = "https://github.com/codeship/codeship_migrate_to_github_app"
+  spec.summary       = "Migrate Coveralls repositories from OAuth App to GitHub App access"
+  spec.description   = "CLI tool to migrate Coveralls repositories from OAuth App to the Coveralls Official GitHub App, supporting orgs with 100+ repositories"
+  spec.homepage      = "https://github.com/coverallsapp/migrate_to_github_app"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features|assets)/}) }
   end
   spec.bindir        = "bin"
-  spec.executables   = "codeship_migrate_to_github_app"
+  spec.executables   = "coveralls_migrate_to_github_app"
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.16"

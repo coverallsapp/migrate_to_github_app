@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'coveralls_migrate_to_github_app'
+
+CoverallsMigrateToGithubApp::CLI.start(ARGV)
