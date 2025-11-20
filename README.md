@@ -1,3 +1,7 @@
+## WIP: 
+
+Repurposing this gem project from CodeShip for Coveralls users who need to migrate their repos from our legacy github integration (Oauth Apps) to new github integration (GitHub App).
+
 # CodeshipMigrateToGitHubApp
 
 This gem helps you migrate large numbers of projects on CodeShip from using legacy GitHub Services to the CodeShip GitHub App. For small numbers of projects, the migration wizard on https://codeship.com can help you migrate. However, there is a limit of 100 projects when migrating using the web UI. We've provided this gem to help users with more than 100 projects to migrate all at once.
